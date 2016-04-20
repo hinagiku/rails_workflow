@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gemspec
-gem "pg"
+# gem "pg"
 gem "bootstrap-rails-engine"
 gem "slim-rails"
 gem "jquery-rails"
@@ -19,7 +19,9 @@ group :test do
   gem 'devise'
 end
 
-gem 'mysql2'
+gem 'mysql2', platform: :ruby
+gem 'jdbc-mysql', platform: :jruby
+gem 'activerecord-jdbc-adapter', platform: :jruby
 
 # just for dummy application
 # gem 'inherited_resources'
